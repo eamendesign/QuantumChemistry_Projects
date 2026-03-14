@@ -25,6 +25,7 @@ Clone the repository:
 git clone https://github.com/eamendesign/QuantumChemistry_Projects.git 
 cd QuantumChemistry_Projects
 pip install numpy matplotlib scipy ase jupyter
+```
 
 ## Philosophy
 
@@ -35,5 +36,5 @@ Each example implements a core idea **from first principles using minimal code**
 
 More modules will be added.
 
-```
+
 

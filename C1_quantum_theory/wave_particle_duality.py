@@ -8,7 +8,6 @@ lam = 500e-9      # 入射光波长
 d = 2e-3          # 缝缝宽度/双缝间距
 D = 1             # 双缝与屏幕水平间距
 
-# ym = 5*lam*D/d，原MATLAB里写的是 5*lam*d/d，其实通常应为 5*lam*D/d
 ym = 5 * lam * D / d
 
 xs = ym
@@ -26,7 +25,6 @@ for i in range(n):
 
     phi = 2 * np.pi * (r2 - r1) / lam
 
-    # 对应 MATLAB: B(i,:) = sum(4*cos(phi/2).^2)
     # 因为这里 phi 是单个标量，sum 实际没有必要
     B[i] = 4 * np.cos(phi / 2)**2
 
